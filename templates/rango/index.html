@@ -1,15 +1,23 @@
+
 <!DOCTYPE html>
+<body style="background-color:sandybrown;"
+leftmargin="90px">
 <head>
-    <title>RANGO</title>
+    <title>BIG NEWS</title>
 </head>
 <body>
-    <h1> Rango says...</h1>
-    <div>
-        Hey there partner! <br />
-        <strong>{{ boldmessage }}</strong><br/>
-    </div>
-    <div>
-        <a href="/rango/about/">About</a><br/>
-    </div>
+{% if news_list %}
+    <ul>
+    {% for news in news_list %}
+        <h1><li>{{ news.Headline }}</li></h1>
+        <li><h2>{{ news.SotryDate }}</h2></li>
+        <li><h3>{{ news.Plot }}</h3></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No News.</p>
+{% endif %}
+
+</body>
 </body>
 </html>

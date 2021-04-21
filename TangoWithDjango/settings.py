@@ -32,8 +32,7 @@ SECRET_KEY = 'django-insecure-nl=l3d1r!s4*5^v1hpyv587+^!pm=kh_bah4riyqtxyo#a=+_+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['alanrobinson1337.pythonanywhere.com']
 
 # Application definition
 
@@ -112,7 +111,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ALLOWED_HOSTS=['alanrobinson1337.pythonanywhere.com']
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

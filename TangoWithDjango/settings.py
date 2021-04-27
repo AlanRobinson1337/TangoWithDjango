@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-
-
 #print(__file__)
 #print(os.path.dirname(__file__))
 #print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

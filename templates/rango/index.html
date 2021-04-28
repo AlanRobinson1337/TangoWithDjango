@@ -12,6 +12,17 @@
         <strong>{{ boldmessage }}</strong><br/>
     </div>
     <div>
+        {%  if categories %}
+        <ul>
+            {%  for categoy in categories %}
+            <li>{{ categoy.name }}</li>
+            {% endfor %}
+        </ul>
+        {%  else %}
+    <strong>There's no categories son</strong>
+    {%  endif %}
+    </div>
+    <div>
         <a href="/rango/about/">About</a><br/>
         <img src="{% static 'images/rango.jpg' %}"
             alt="Picture of Rango" />

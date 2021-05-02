@@ -6,7 +6,7 @@ import django
 django.setup()
 
 
-from rango.models import Category, Page
+from TangoWithDjango.rango.models import Category, Page
 
 
 def populate():
@@ -63,7 +63,6 @@ def add_cat(name, views=1, likes=0):
     return c
 
 
-# Start execution here!
 if __name__ == '__main__':
     print('Starting Rango population script...')
     populate()
